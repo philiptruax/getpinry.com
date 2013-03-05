@@ -33,4 +33,6 @@ FILES_TO_COPY = (
 MENUITEMS =  (
     ('BitBucket Repo (Primary)', 'https://bitbucket.org/pinry/pinry/'),
     ('GitHub Repo (Mirror)', 'https://github.com/pinry/pinry/'),
+    ('Issue Tracker', 'https://bitbucket.org/pinry/pinry/issues/'),
+    ('Contact Us', 'mailto:devs@getpinry.com'),
 )
