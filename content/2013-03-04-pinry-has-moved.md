@@ -1,5 +1,6 @@
 Title: Pinry has moved!
 Category: Pinry
+Author: Isaac Bythewood
 
  * [Pinry on BitBucket (Primary)](https://bitbucket.org/pinry/pinry)
  * [Pinry on GitHub (Mirror)](https://github.com/pinry/pinry)

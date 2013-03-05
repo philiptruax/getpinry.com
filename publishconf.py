@@ -6,6 +6,6 @@ sys.path.append('.')
 from pelicanconf import *
 
 
-SITEURL = 'http://isaacbythewood.com'
+SITEURL = 'http://getpinry.com'
 DELETE_OUTPUT_DIRECTORY = True
-GOOGLE_ANALYTICS = 'UA-35235932-1'
+GOOGLE_ANALYTICS = 'UA-39005284-1'
