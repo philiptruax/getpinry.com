@@ -1,0 +1,108 @@
+{% extends "base.html" %}
+
+{% block extra_css %}
+    <style>
+        body {
+            padding-top: 50px;
+        }
+
+        #header {
+            background-image: url('{{ SITEURL }}/theme/images/index/header-background.jpg');
+            background-position: center center;
+            background-attachment: fixed;
+            height: 700px;
+            -webkit-box-shadow: 0 1px 0 #bbb;
+               -moz-box-shadow: 0 1px 0 #bbb;
+                    box-shadow: 0 1px 0 #bbb;
+            border-bottom: 1px solid #bbb;
+            margin-bottom: 20px;
+        }
+
+        #header-overlay {
+            background: rgba(255, 255, 255, 0.7);
+            height: 700px;
+        }
+
+        #header-content {
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            width: 800px;
+            margin-left: -400px;
+            text-align: center;
+        }
+
+        #header #title {
+            font-family: 'Monoton', sans-serif;
+            font-weight: normal;
+            font-size: 10em;
+            line-height: 1em;
+            color: #275173;
+        }
+
+        #header #description {
+            color: #275173;
+            font-size: 2em;
+            margin-bottom: 30px;
+        }
+    </style>
+{% endblock %}
+
+{% block yield %}
+<div id="header">
+    <div id="header-overlay">
+        <div id="header-content">
+            <h1 id="title">Pinry</h1>
+            <h2 id="description">A tiling image board system for people who want to save, tag, and share images, videos and webpages.</h2>
+            <a href="https://bitbucket.org/pinry/pinry/" class="btn btn-large btn-success">Pinry on BitBucket</a>
+            <a href="https://github.com/pinry/pinry/" class="btn btn-large btn-success">Pinry on GitHub</a>
+        </div>
+    </div>
+</div>
+<div id="content" class="container">
+    <div class="row">
+        <div class="span3">
+            <ul class="nav nav-tabs nav-stacked">
+            {% for name, link in LINKS %}
+                <li><a href="{{ link }}">{{ name }}</a></li>
+            {% endfor %}
+            </ul>
+        </div>
+        <div class="span9">
+            {% for article in articles_page.object_list %}        
+                <div class="article">
+                    <h1 class="entry-title"><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h1> 
+                    {% include 'article_infos.html' %}
+                    {{ article.summary }}
+                    <a class="readmore" href="{{ SITEURL }}/{{ article.url }}">read more</a>
+                </div>
+                <hr/>
+                {% if loop.last %}
+                    {% if loop.last and (articles_page.has_previous() 
+                    or not articles_page.has_previous() and loop.length > 1) %}
+                        {% include 'pagination.html' %}
+                    {% endif %}
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+    <script>
+        $(window).load(function() {
+            function maxHeaderHeight() {
+                if ($(window).height() < 700) {
+                    $('#header').height($(window).height()-70);
+                }
+            }
+
+            maxHeaderHeight();
+
+            $(window).resize(function() {
+                maxHeaderHeight();
+            });
+        });
+    </script>
+{% endblock %}

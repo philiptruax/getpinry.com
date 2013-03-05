@@ -11,6 +11,11 @@ DEFAULT_LANG = u'en'
 DEFAULT_PAGINATION = 5
 DEFAULT_DATE_FORMAT = '%d %b %Y'
 
+GITHUB_ACTIVITY_FEED = 'https://github.com/pinry.atom'
+
+THEME = 'theme'
+TYPOGRIFY = True
+
 JINJA_EXTENSIONS = (
     'jinja2.ext.loopcontrols',
 )
@@ -30,9 +35,8 @@ FILES_TO_COPY = (
     ('extra/robots.txt', 'robots.txt'),
 )
 
-MENUITEMS =  (
-    ('BitBucket Repo (Primary)', 'https://bitbucket.org/pinry/pinry/'),
-    ('GitHub Repo (Mirror)', 'https://github.com/pinry/pinry/'),
+LINKS = (
+    ('BitBucket', 'https://bitbucket.org/pinry/pinry/'),
+    ('GitHub', 'https://github.com/pinry/pinry/'),
     ('Issue Tracker', 'https://bitbucket.org/pinry/pinry/issues/'),
-    ('Contact Us', 'mailto:devs@getpinry.com'),
 )

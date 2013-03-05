@@ -1,0 +1,9 @@
+<table class="post-info" width="100%">
+<tbody>
+    <tr>
+        <td width="33%">Published: {{ article.locale_date }}</td>
+        <td width="33%">Author: <a class="url fn" href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a></td>
+        <td width="33%">Category: <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a></td>
+    </tr>
+</tbody>
+</table>

@@ -1,6 +1,7 @@
 Title: Pinry License Change
 Category: Pinry
 Author: Isaac Bythewood
+Email: isaac@bythewood.me
 
 Pinry is now releasing under the AGPLv3 license instead of the Simplified BSD
 License. The change is a small yet significant one and means that if you are

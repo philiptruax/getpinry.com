@@ -1,0 +1,45 @@
+/* Start Global */
+body {
+    padding-top: 70px;
+}
+/* End Global */
+
+/* Start Navigation */
+.navbar-fixed-top .navbar-inner {
+    background: white;
+    background-image: none;
+    -webkit-box-shadow: 0 1px 0 #bbb;
+       -moz-box-shadow: 0 1px 0 #bbb;
+            box-shadow: 0 1px 0 #bbb;
+    border-bottom: 1px solid #bbb;
+    filter: none;
+    height: 48px;
+}
+
+.navbar .brand {
+    color: #275173;
+    font-family: 'Monoton', sans-serif;
+    font-size: 30px;
+    margin: 5px 0 0 -7px;
+}
+
+.navbar .nav > li > a {
+    background: #ddd;
+    -webkit-border-radius: 2px;
+       -moz-border-radius: 2px;
+            border-radius: 2px;
+    color: #333;
+    margin: 12px 7px;
+    padding: 3px 13px;
+    text-shadow: none;
+}
+
+.navbar .nav > li:last-child > a {
+    margin-right: 14px;
+}
+
+.navbar .nav > li > a:hover {
+    background: #275173;
+    color: #ddd;
+}
+/* End Navigation */
