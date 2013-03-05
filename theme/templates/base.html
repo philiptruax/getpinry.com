@@ -18,27 +18,55 @@
         <title>{% block title %}{{ SITENAME }}{% endblock %}</title>
         
         <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Monoton"/>
-        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="{{ SITEURL }}/theme/css/bootstrap.css"/>
+        <link rel="stylesheet" href="{{ SITEURL }}/theme/css/flat-ui.css"/>
         <link rel="stylesheet" href="{{ SITEURL }}/theme/css/base.css"/>
         {% block extra_css %}{% endblock %}
     </head>
 
     <body>
-        <div class="navbar navbar-fixed-top">
+        <div class="navbar navbar-inverse">
             <div class="navbar-inner">
-                <a href="{{ SITEURL }}" class="brand pull-left">{{ SITENAME }}</a>
-                <ul class="nav pull-right">
-                {% for name, link in LINKS %}
-                    <li><a href="{{ link }}">{{ name }}</a></li>
-                {% endfor %}
-                </ul>
+                <div class="container">
+                    <a href="{{ SITEURL }}" class="brand pull-left">{{ SITENAME }}</a>
+                    <ul class="nav pull-right">
+                    {% for name, link in LINKS %}
+                        <li><a href="{{ link }}" class="btn btn-small">{{ name }}</a></li>
+                    {% endfor %}
+                    </ul>
+                </div>
             </div>
         </div>
         
         {% block yield %}{% endblock %}
 
-        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="span9">
+                        <h3>Want to be a contributor?</h3>
+                        <p>Clone our code on BitBucket, find an issue on our
+                            tracker that you can fix and do a pull request. If
+                            your code matches our general style and it works
+                            we'll merge it. It's that easy!</p>
+                    </div>
+                    <div class="span3">
+                        <h3>Links</h3>
+                        <ul class="nav">
+                        {% for name, link in LINKS %}
+                            <li><a href="{{ link }}">{{ name }}</a></li>
+                        {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="span12">
+                        <p>Pinry Contributors &copy; 2013</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         {% block extra_js %}{% endblock %}
     </body>
 </html>
