@@ -49,6 +49,11 @@
         .article {
             margin-bottom: 25px;
         }
+
+        #as-seen-on img {
+            height: 70px;
+            margin: 0 30px 30px 30px;
+        }
     </style>
 {% endblock %}
 
@@ -58,13 +63,14 @@
         <div id="header-content">
             <h1 id="title">Pinry</h1>
             <h2 id="description">A tiling image board system for people who want to save, tag, and share images, videos and webpages.</h2>
-            <a href="https://bitbucket.org/pinry/pinry/" class="btn btn-large btn-success">Pinry on BitBucket</a>
-            <a href="https://github.com/pinry/pinry/" class="btn btn-large btn-success">Pinry on GitHub</a>
+            <a href="https://bitbucket.org/pinry/pinry/src/" class="btn btn-large btn-success">View The Code (BitBucket)</a>
+            <a href="https://bitbucket.org/pinry/pinry/get/v0.5.3.tar.gz" class="btn btn-large btn-success">Download v0.5.3 (861 KB)</a>
         </div>
     </div>
 </div>
 <div id="content" class="container">
     <div class="row demo-tiles">
+
         <div class="span3">
           <div class="tile">
             <img class="tile-image big-illustration" alt="" src="{{ SITEURL }}/theme/images/illustrations/compass.png">
@@ -99,20 +105,17 @@
             <p>Whether you host your own board or host with us you can invite friends to view your boards and pins.</p>
             <a class="btn btn-primary btn-large btn-block" href="#">Get Social</a>
           </div>
-
         </div>
-      </div>
-    <div class="row">
-        <div class="span12">
-            <h1>Recent Blog Posts</h1>
-            {% for article in articles_page.object_list %}        
-                <div class="article">
-                    {% include 'article_infos.html' %}
-                    <h1 class="entry-title"><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h1> 
-                    {{ article.summary }}
-                    <a class="btn btn-large btn-success read-more" href="{{ SITEURL }}/{{ article.url }}">Read More</a>
-                </div>
-            {% endfor %}
+
+    </div>
+
+    <div class="row" id="as-seen-on">
+        <div class="span12" align="center">
+            <p>
+                <img src="{{ SITEURL }}/theme/images/as-seen-on/usa-today.png"/>
+                <img src="{{ SITEURL }}/theme/images/as-seen-on/tnw.png"/>
+                <img src="{{ SITEURL }}/theme/images/as-seen-on/pycoder.jpg"/>
+            </p>
         </div>
     </div>
 </div>

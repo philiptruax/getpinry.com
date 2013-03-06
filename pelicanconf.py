@@ -23,6 +23,10 @@ JINJA_EXTENSIONS = (
 ARTICLE_URL = '{date:%Y}/{date:%m}/{date:%d}/{slug}/'
 ARTICLE_SAVE_AS = '{date:%Y}/{date:%m}/{date:%d}/{slug}/index.html'
 
+TEMPLATE_PAGES = {
+    'articles.html': 'blog/index.html',
+}
+
 FILES_TO_COPY = (
     ('extra/CNAME', 'CNAME'),
     ('extra/apple-touch-icon-114x114-precomposed.png', 'apple-touch-icon-114x114-precomposed.png'),
@@ -36,7 +40,8 @@ FILES_TO_COPY = (
 )
 
 LINKS = (
+    ('Latest News', '/blog/'),
+    ('Issue Tracker', 'https://bitbucket.org/pinry/pinry/issues/'),
     ('BitBucket', 'https://bitbucket.org/pinry/pinry/'),
     ('GitHub', 'https://github.com/pinry/pinry/'),
-    ('Issue Tracker', 'https://bitbucket.org/pinry/pinry/issues/'),
 )
