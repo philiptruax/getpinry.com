@@ -10,7 +10,7 @@
             background-image: url('{{ SITEURL }}/theme/images/index/header-background.jpg');
             background-position: center center;
             background-attachment: fixed;
-            height: 700px;
+            height: 500px;
             -webkit-box-shadow: 0 1px 0 #bbb;
                -moz-box-shadow: 0 1px 0 #bbb;
                     box-shadow: 0 1px 0 #bbb;
@@ -20,12 +20,12 @@
 
         #header-overlay {
             background: rgba(255, 255, 255, 0.7);
-            height: 700px;
+            height: 500px;
         }
 
         #header-content {
             position: absolute;
-            top: 20%;
+            top: 13%;
             left: 50%;
             width: 800px;
             margin-left: -400px;
@@ -46,6 +46,10 @@
             margin-bottom: 30px;
         }
 
+        #header .btn-small {
+            font-size: 14px;
+        }
+
         .article {
             margin-bottom: 25px;
         }
@@ -63,8 +67,15 @@
         <div id="header-content">
             <h1 id="title">Pinry</h1>
             <h2 id="description">A tiling image board system for people who want to save, tag, and share images, videos and webpages.</h2>
-            <a href="https://bitbucket.org/pinry/pinry/src/" class="btn btn-large btn-success">View The Code (BitBucket)</a>
-            <a href="https://bitbucket.org/pinry/pinry/get/v0.5.3.tar.gz" class="btn btn-large btn-success">Download v0.5.3 (861 KB)</a>
+            <p>
+                <a href="https://bitbucket.org/pinry/pinry/src/" class="btn btn-large">View The Code (BitBucket)</a>
+                <a href="https://bitbucket.org/pinry/pinry/get/v0.5.3.zip" class="btn btn-large">Download v0.5.3 (885 KB)</a>
+            </p>
+            <p>
+                <a href="https://github.com/pinry/pinry/" class="btn btn-small btn-success">Github Mirror</a>
+                <a href="https://bitbucket.org/pinry/pinry/issues/" class="btn btn-small btn-success">Issue Tracker</a>
+                <a href="#" class="btn btn-small btn-success">Demo Board</a>
+            </p>
         </div>
     </div>
 </div>
@@ -119,22 +130,4 @@
         </div>
     </div>
 </div>
-{% endblock %}
-
-{% block extra_js %}
-    <script>
-        $(window).load(function() {
-            function maxHeaderHeight() {
-                if ($(window).height() < 700) {
-                    $('#header').height($(window).height()-70);
-                }
-            }
-
-            maxHeaderHeight();
-
-            $(window).resize(function() {
-                maxHeaderHeight();
-            });
-        });
-    </script>
 {% endblock %}
