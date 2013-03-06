@@ -11,8 +11,6 @@ DEFAULT_LANG = u'en'
 DEFAULT_PAGINATION = 5
 DEFAULT_DATE_FORMAT = '%d %b %Y'
 
-GITHUB_ACTIVITY_FEED = 'https://github.com/pinry.atom'
-
 THEME = 'theme'
 TYPOGRIFY = True
 
@@ -20,11 +18,14 @@ JINJA_EXTENSIONS = (
     'jinja2.ext.loopcontrols',
 )
 
-ARTICLE_URL = '{date:%Y}/{date:%m}/{date:%d}/{slug}/'
-ARTICLE_SAVE_AS = '{date:%Y}/{date:%m}/{date:%d}/{slug}/index.html'
+ARTICLE_URL = 'blog/{date:%Y}/{date:%m}/{date:%d}/{slug}/'
+ARTICLE_SAVE_AS = 'blog/{date:%Y}/{date:%m}/{date:%d}/{slug}/index.html'
 
 TEMPLATE_PAGES = {
-    'articles.html': 'blog/index.html',
+    'tour.html': 'tour/index.html',
+    'docs.html': 'docs/index.html',
+    'blog.html': 'blog/index.html',
+    'contact.html': 'contact/index.html',
 }
 
 FILES_TO_COPY = (
@@ -40,8 +41,17 @@ FILES_TO_COPY = (
 )
 
 LINKS = (
-    ('Latest News', '/blog/'),
-    ('Issue Tracker', 'https://bitbucket.org/pinry/pinry/issues/'),
-    ('BitBucket', 'https://bitbucket.org/pinry/pinry/'),
-    ('GitHub', 'https://github.com/pinry/pinry/'),
+    ('Code', 'https://bitbucket.org/pinry/pinry/src/'),
+    ('Tour', '/tour/'),
+    ('Docs', '/docs/'),
+    ('Blog', '/blog/'),
+    ('Contact', '/contact/'),
 )
+
+SOCIAL = (
+    ('Twitter', 'https://twitter.com/getpinry'),
+    ('Google+', 'https://plus.google.com/102872296329952451662/'),
+    ('Feed', '/feeds/all.atom.xml'),
+)
+
+ISSUETRACKER = 'https://bitbucket.org/pinry/pinry/issues/'

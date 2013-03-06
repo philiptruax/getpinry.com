@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+
+{% block title %}Tour{% endblock %}
+
+{% block yield %}
+<div class="container">
+    <div class="row">
+        <h1>Tour of Pinry's Core Features</h1>
+        <p>This is a quick tour of some of the core Pinry features, we are
+            working on Pinry almost every day and if you don't see a feature
+            here that doesn't mean it isn't in Pinry. Please check our
+            <a href="/docs/">documentation</a> for a more in depth look at Pinry
+            and if you still can't find what you want submit a feature request
+            to our <a href="{{ ISSUETRACKER }}">issue tracker</a> and we'll
+            gladly read over it and respond to you.</p>
+    </div>
+    <div class="row">
+        <div class="span4">
+            <h3>Pins and Tiling</h3>
+            <p>The core component of Pinry are it's pins, each pin includes an
+                image and user with optional description and tags. We also pull
+                avatars from Gravatar, just one less thing to configure.</p>
+        </div>
+        <div class="span4">
+            <h3>New Pins</h3>
+            <p>With our new pin form we have a live preview of the pin you are
+                about to post. We also allow you to add pins via both URL and
+                drag &amp; drop upload allowing you to post an image from
+                anywhere.</p>
+        </div>
+        <div class="span4">
+            <h3>Editing and Deleting</h3>
+            <p>Pins created by you have an edit and delete icon on them, all you
+                have to do is click either option giving you full control.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="span4">
+            <h3>Users and Privacy</h3>
+            <p>If you deploy your own Pinry you have complete control over it's
+                location, users and privacy settings. You can set it so that
+                only your logged in users have the ability to see/create pins
+                and you can disable registration entirely allowing for a
+                completely locked down experience.</p>
+        </div>
+        <div class="span4">
+            <h3>Tag and User Filters</h3>
+            <p>Every pin allows you to click on the username or tags attached to
+                it this allows you to filter the entire board showing only what
+                you're interested in.</p>
+        </div>
+        <div class="span4">
+            <h3>Bookmarklet</h3>
+            <p>Post new pins easily from any website using Pinry's bookmarklet.
+                It provides the same features such as instant preview that
+                pinning directly from Pinry provides.</p>
+        </div>
+    </div>
+</div>
+{% endblock %}

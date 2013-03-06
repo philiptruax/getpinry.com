@@ -50,13 +50,9 @@
             font-size: 14px;
         }
 
-        .article {
-            margin-bottom: 25px;
-        }
-
         #as-seen-on img {
             height: 70px;
-            margin: 0 30px 30px 30px;
+            margin: 0 30px 20px 30px;
         }
     </style>
 {% endblock %}
@@ -81,51 +77,46 @@
 </div>
 <div id="content" class="container">
     <div class="row demo-tiles">
-
         <div class="span3">
-          <div class="tile">
-            <img class="tile-image big-illustration" alt="" src="{{ SITEURL }}/theme/images/illustrations/compass.png">
-            <h3 class="tile-title">Open Source</h3>
-            <p>We open source the heart of Pinry, you can grab it and host it yourself on any server that supports Python.</p>
-            <a class="btn btn-primary btn-large btn-block" href="https://bitbucket.org/pinry/pinry/">Get Source</a>
-          </div>
+            <div class="tile">
+                <img class="tile-image big-illustration" alt="" src="{{ SITEURL }}/theme/images/illustrations/compass.png">
+                <h3 class="tile-title">Open Source</h3>
+                <p>We open source the heart of Pinry, you can grab it and host it yourself on any server that supports Python.</p>
+                <a class="btn btn-primary btn-large btn-block" href="https://bitbucket.org/pinry/pinry/src/">Get Source</a>
+            </div>
         </div>
-
         <div class="span3">
-          <div class="tile">
-            <img class="tile-image" alt="" src="{{ SITEURL }}/theme/images/illustrations/settings.png">
-            <h3 class="tile-title">Easy to Customize</h3>
-            <p>If you host it yourself the limit is your imagination, on Pinry Hosted give you as many settings as possible.</p>
-            <a class="btn btn-primary btn-large btn-block" href="#">Read Docs</a>
-          </div>
+            <div class="tile">
+                <img class="tile-image" alt="" src="{{ SITEURL }}/theme/images/illustrations/settings.png">
+                <h3 class="tile-title">Easy to Customize</h3>
+                <p>If you host it yourself the limit is your imagination, on Pinry Hosted give you as many settings as possible.</p>
+                <a class="btn btn-primary btn-large btn-block" href="/docs/">Read Docs</a>
+            </div>
         </div>
-
         <div class="span3">
-          <div class="tile">
-            <img class="tile-image" alt="" src="{{ SITEURL }}/theme/images/illustrations/gift.png">
-            <h3 class="tile-title">Continuous Releases</h3>
-            <p>We try to release new features as fast as possible, and do our best to make upgrades painless.</p>
-            <a class="btn btn-primary btn-large btn-block" href="https://bitbucket.org/pinry/pinry/downloads#tag-downloads">View Releases</a>
-          </div>
+            <div class="tile">
+                <img class="tile-image" alt="" src="{{ SITEURL }}/theme/images/illustrations/time.png">
+                <h3 class="tile-title">Continuous Releases</h3>
+                <p>We try to release new features as fast as possible, and do our best to make upgrades painless.</p>
+                <a class="btn btn-primary btn-large btn-block" href="https://bitbucket.org/pinry/pinry/downloads#tag-downloads">View Releases</a>
+            </div>
         </div>
-
         <div class="span3">
-          <div class="tile">
-            <img class="tile-image big-illustration" alt="" src="{{ SITEURL }}/theme/images/illustrations/share.png">
-            <h3 class="tile-title">Share With Friends</h3>
-            <p>Whether you host your own board or host with us you can invite friends to view your boards and pins.</p>
-            <a class="btn btn-primary btn-large btn-block" href="#">Get Social</a>
-          </div>
+            <div class="tile">
+                <img class="tile-image" alt="" src="{{ SITEURL }}/theme/images/illustrations/gift.png">
+                <h3 class="tile-title">Lots of Features</h3>
+                <p>Check out our tour to see the core list of features but if you want to learn more read the docs.</p>
+                <a class="btn btn-primary btn-large btn-block" href="/tour/#bookmarklet">See Tour</a>
+            </div>
         </div>
-
     </div>
 
     <div class="row" id="as-seen-on">
         <div class="span12" align="center">
             <p>
-                <img src="{{ SITEURL }}/theme/images/as-seen-on/usa-today.png"/>
-                <img src="{{ SITEURL }}/theme/images/as-seen-on/tnw.png"/>
-                <img src="{{ SITEURL }}/theme/images/as-seen-on/pycoder.jpg"/>
+                <a href="http://usatoday30.usatoday.com/tech/products/story/2012-04-27/pinterest-pinry-private-pinning/54584308/1" target="_blank"><img src="{{ SITEURL }}/theme/images/as-seen-on/usa-today.png"/></a>
+                <a href="http://thenextweb.com/apps/2012/04/27/pinry-is-a-self-hosted-version-of-pinterest-that-gives-you-full-control-of-your-pins/" target="_blank"><img src="{{ SITEURL }}/theme/images/as-seen-on/tnw.png"/></a>
+                <a href="http://us4.campaign-archive1.com/?u=9735795484d2e4c204da82a29&id=4f9b37c501" target="_blank"><img src="{{ SITEURL }}/theme/images/as-seen-on/pycoder.jpg"/></a>
             </p>
         </div>
     </div>

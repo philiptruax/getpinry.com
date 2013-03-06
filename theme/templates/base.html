@@ -43,14 +43,14 @@
         <div class="footer">
             <div class="container">
                 <div class="row">
-                    <div class="span9">
+                    <div class="span8">
                         <h3>Want to be a contributor?</h3>
                         <p>Clone our code on BitBucket, find an issue on our
                             tracker that you can fix and do a pull request. If
                             your code matches our general style and it works
                             we'll merge it. It's that easy!</p>
                     </div>
-                    <div class="span3">
+                    <div class="span2">
                         <h3>Links</h3>
                         <ul class="nav">
                         {% for name, link in LINKS %}
@@ -58,10 +58,18 @@
                         {% endfor %}
                         </ul>
                     </div>
+                    <div class="span2">
+                        <h3>Social</h3>
+                        <ul class="nav">
+                        {% for name, link in SOCIAL %}
+                            <li><a href="{{ link }}">{{ name }}</a></li>
+                        {% endfor %}
+                        </ul>
+                    </div>
                 </div>
                 <div class="row">
                     <div class="span12">
-                        <p>Pinry Contributors &copy; 2013</p>
+                        <p>&copy; 2013 Pinry Contributors | Site made with <a href="http://getpelican.com/">Pelican</a> and <a href="http://designmodo.github.com/Flat-UI/">Flat UI</a></p>
                     </div>
                 </div>
             </div>
