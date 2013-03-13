@@ -15,7 +15,7 @@
                -moz-box-shadow: 0 1px 0 #bbb;
                     box-shadow: 0 1px 0 #bbb;
             border-bottom: 1px solid #bbb;
-            margin-bottom: 20px;
+            margin-bottom: 70px;
         }
 
         #header-overlay {
@@ -50,6 +50,20 @@
             font-size: 14px;
         }
 
+        #header-social {
+            list-style-type: none;
+            padding: 14px 0 10px 0;
+            text-align: center;
+            background-color: rgb(232, 237, 242);
+            margin: 2px 0 0 0;
+            border-bottom: 2px solid #bbb;
+        }
+
+        #header-social li {
+            display: inline-block;
+            text-align: center;
+        }
+
         #as-seen-on img {
             height: 70px;
             margin: 0 30px 20px 30px;
@@ -64,16 +78,30 @@
             <h1 id="title">Pinry</h1>
             <h2 id="description">A tiling image board system for people who want to save, tag, and share images, videos and webpages.</h2>
             <p>
-                <a href="https://bitbucket.org/pinry/pinry/src/" class="btn btn-large">View The Code (BitBucket)</a>
-                <a href="https://bitbucket.org/pinry/pinry/get/v0.5.3.zip" class="btn btn-large">Download v0.5.3 (885 KB)</a>
+                <a href="https://github.com/pinry/pinry/" class="btn btn-large">View The Code (GitHub)</a>
+                <a href="https://github.com/pinry/pinry/archive/v0.5.3.zip" class="btn btn-large">Download v0.5.3 (885 KB)</a>
             </p>
             <p>
-                <a href="https://github.com/pinry/pinry/" class="btn btn-small btn-success">Github Mirror</a>
-                <a href="https://bitbucket.org/pinry/pinry/issues/" class="btn btn-small btn-success">Issue Tracker</a>
-                <a href="#" class="btn btn-small btn-success">Demo Board</a>
+                <a href="https://bitbucket.org/pinry/pinry/" class="btn btn-small btn-success">BitBucket Mirror</a>
+                <a href="https://github.com/pinry/pinry/issues" class="btn btn-small btn-success">Issue Tracker</a>
+                <a href="http://demo.getpinry.com/" class="btn btn-small btn-success">Demo Board</a>
             </p>
         </div>
     </div>
+    <ul id="header-social">
+        <li>
+            <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=pinry&amp;repo=pinry&amp;type=watch&amp;count=true" allowtransparency="true" frameborder="0" height="20px" scrolling="0" width="100px"></iframe>
+        </li>
+        <li>
+            <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=pinry&amp;repo=pinry&amp;type=fork&amp;count=true" allowtransparency="true" frameborder="0" height="20px" scrolling="0" width="102px"></iframe>
+        </li>
+        <li>
+            <iframe data-twttr-rendered="true" title="Twitter Follow Button" style="width: 242px; height: 20px;" class="twitter-follow-button twitter-follow-button" src="http://platform.twitter.com/widgets/follow_button.1363148939.html#_=1363159171802&amp;id=twitter-widget-1&amp;lang=en&amp;screen_name=getpinry&amp;show_count=true&amp;show_screen_name=true&amp;size=m" allowtransparency="true" frameborder="0" scrolling="no"></iframe>
+        </li>
+        <li>
+            <iframe data-twttr-rendered="true" title="Twitter Tweet Button" style="width: 109px; height: 20px;" class="twitter-share-button twitter-count-horizontal" src="http://platform.twitter.com/widgets/tweet_button.1363148939.html#_=1363159171798&amp;count=horizontal&amp;id=twitter-widget-0&amp;lang=en&amp;original_referer=http%3A%2F%2Fgetpinry.com%2F&amp;size=m&amp;text=Pinry&amp;url=http%3A%2F%2Fgetpinry.com%2F&amp;via=getpinry" allowtransparency="true" frameborder="0" scrolling="no"></iframe>
+        </li>
+    </ul>
 </div>
 <div id="content" class="container">
     <div class="row demo-tiles">
@@ -82,7 +110,7 @@
                 <img class="tile-image big-illustration" alt="" src="{{ SITEURL }}/theme/images/illustrations/compass.png">
                 <h3 class="tile-title">Open Source</h3>
                 <p>We open source the heart of Pinry, you can grab it and host it yourself on any server that supports Python.</p>
-                <a class="btn btn-primary btn-large btn-block" href="https://bitbucket.org/pinry/pinry/src/">Get Source</a>
+                <a class="btn btn-primary btn-large btn-block" href="https://github.com/pinry/pinry/">Get Source</a>
             </div>
         </div>
         <div class="span3">
@@ -98,7 +126,7 @@
                 <img class="tile-image" alt="" src="{{ SITEURL }}/theme/images/illustrations/time.png">
                 <h3 class="tile-title">Continuous Releases</h3>
                 <p>We try to release new features as fast as possible, and do our best to make upgrades painless.</p>
-                <a class="btn btn-primary btn-large btn-block" href="https://bitbucket.org/pinry/pinry/downloads#tag-downloads">View Releases</a>
+                <a class="btn btn-primary btn-large btn-block" href="https://github.com/pinry/pinry/tags/">View Releases</a>
             </div>
         </div>
         <div class="span3">
@@ -106,7 +134,7 @@
                 <img class="tile-image" alt="" src="{{ SITEURL }}/theme/images/illustrations/gift.png">
                 <h3 class="tile-title">Lots of Features</h3>
                 <p>Check out our tour to see the core list of features but if you want to learn more read the docs.</p>
-                <a class="btn btn-primary btn-large btn-block" href="/tour/#bookmarklet">See Tour</a>
+                <a class="btn btn-primary btn-large btn-block" href="/tour/">See Tour</a>
             </div>
         </div>
     </div>

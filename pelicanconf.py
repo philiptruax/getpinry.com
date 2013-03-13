@@ -41,7 +41,7 @@ FILES_TO_COPY = (
 )
 
 LINKS = (
-    ('Code', 'https://bitbucket.org/pinry/pinry/src/'),
+    ('Code', 'https://github.com/pinry/pinry/'),
     ('Tour', '/tour/'),
     ('Docs', '/docs/'),
     ('Blog', '/blog/'),
@@ -49,9 +49,8 @@ LINKS = (
 )
 
 SOCIAL = (
-    ('Twitter', 'https://twitter.com/getpinry'),
-    ('Google+', 'https://plus.google.com/102872296329952451662/'),
     ('Feed', '/feeds/all.atom.xml'),
+    ('Twitter', 'https://twitter.com/getpinry'),
 )
 
-ISSUETRACKER = 'https://bitbucket.org/pinry/pinry/issues/'
+ISSUETRACKER = 'https://github.com/pinry/pinry/issues'
