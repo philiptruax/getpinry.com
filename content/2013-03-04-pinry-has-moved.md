@@ -3,8 +3,8 @@ Category: Pinry
 Author: Isaac Bythewood
 Email: isaac@bythewood.me
 
- * [Pinry on BitBucket (Primary)](https://bitbucket.org/pinry/pinry)
- * [Pinry on GitHub (Mirror)](https://github.com/pinry/pinry)
+ * [Pinry on GitHub (Primary)](https://github.com/pinry/pinry)
+ * [Pinry on BitBucket (Mirror)](https://bitbucket.org/pinry/pinry)
 
 I would like to give a huge thank you to everyone for your support of Pinry and
 Pinry will continue to grow because of it. Pinry's official v1.0.0 release is

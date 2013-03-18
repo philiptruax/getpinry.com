@@ -18,8 +18,7 @@
         <title>{% block title %}{{ SITENAME }}{% endblock %}</title>
         
         <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Monoton"/>
-        <link rel="stylesheet" href="{{ SITEURL }}/theme/css/bootstrap.css"/>
-        <link rel="stylesheet" href="{{ SITEURL }}/theme/css/flat-ui.css"/>
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/css/bootstrap.min.css"/>
         <link rel="stylesheet" href="{{ SITEURL }}/theme/css/base.css"/>
         {% block extra_css %}{% endblock %}
     </head>
@@ -31,7 +30,7 @@
                     <a href="{{ SITEURL }}" class="brand pull-left">{{ SITENAME }}</a>
                     <ul class="nav pull-right">
                     {% for name, link in LINKS %}
-                        <li><a href="{{ link }}" class="btn btn-small">{{ name }}</a></li>
+                        <li><a href="{{ link }}">{{ name }}</a></li>
                     {% endfor %}
                     </ul>
                 </div>
@@ -69,7 +68,7 @@
                 </div>
                 <div class="row">
                     <div class="span12">
-                        <p>&copy; 2013 Pinry Contributors | Site made with <a href="http://getpelican.com/">Pelican</a> and <a href="http://designmodo.github.com/Flat-UI/">Flat UI</a></p>
+                        <p>&copy; 2013 Pinry Contributors | Site compiled with <a href="http://getpelican.com/">Pelican</a></p>
                     </div>
                 </div>
             </div>

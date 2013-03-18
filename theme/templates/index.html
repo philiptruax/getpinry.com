@@ -64,6 +64,23 @@
             text-align: center;
         }
 
+        .thumbnail {
+            border-color: rgb(187, 187, 187);
+            border-width: 2px;
+            background-color: rgb(232, 237, 242);
+            padding: 10px;
+            -webkit-box-shadow: none;
+               -moz-box-shadow: none;
+                    box-shadow: none;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .thumbnail-title {
+            font-size: 19px;
+            white-space: nowrap;
+        }
+
         #as-seen-on img {
             height: 70px;
             margin: 0 30px 20px 30px;
@@ -78,8 +95,8 @@
             <h1 id="title">Pinry</h1>
             <h2 id="description">A tiling image board system for people who want to save, tag, and share images, videos and webpages.</h2>
             <p>
-                <a href="https://github.com/pinry/pinry/" class="btn btn-large">View The Code (GitHub)</a>
-                <a href="https://github.com/pinry/pinry/archive/v0.5.3.zip" class="btn btn-large">Download v0.5.3 (885 KB)</a>
+                <a href="https://github.com/pinry/pinry/" class="btn btn-large btn-primary">View The Code (GitHub)</a>
+                <a href="https://github.com/pinry/pinry/archive/v0.5.3.zip" class="btn btn-large btn-primary">Download v0.5.3 (885 KB)</a>
             </p>
             <p>
                 <a href="https://bitbucket.org/pinry/pinry/" class="btn btn-small btn-success">BitBucket Mirror</a>
@@ -106,33 +123,30 @@
 <div id="content" class="container">
     <div class="row demo-tiles">
         <div class="span3">
-            <div class="tile">
-                <img class="tile-image big-illustration" alt="" src="{{ SITEURL }}/theme/images/illustrations/compass.png">
-                <h3 class="tile-title">Open Source</h3>
+            <div class="thumbnail">
+                <img class="thumbnail-image big-illustration" alt="" src="{{ SITEURL }}/theme/images/illustrations/compass.png">
+                <h3 class="thumbnail-title">Open Source</h3>
                 <p>We open source the heart of Pinry, you can grab it and host it yourself on any server that supports Python.</p>
                 <a class="btn btn-primary btn-large btn-block" href="https://github.com/pinry/pinry/">Get Source</a>
             </div>
         </div>
         <div class="span3">
-            <div class="tile">
-                <img class="tile-image" alt="" src="{{ SITEURL }}/theme/images/illustrations/settings.png">
-                <h3 class="tile-title">Easy to Customize</h3>
+            <div class="thumbnail">
+                <h3 class="thumbnail-title">Easy to Customize</h3>
                 <p>If you host it yourself the limit is your imagination, on Pinry Hosted give you as many settings as possible.</p>
                 <a class="btn btn-primary btn-large btn-block" href="/docs/">Read Docs</a>
             </div>
         </div>
         <div class="span3">
-            <div class="tile">
-                <img class="tile-image" alt="" src="{{ SITEURL }}/theme/images/illustrations/time.png">
-                <h3 class="tile-title">Continuous Releases</h3>
+            <div class="thumbnail">
+                <h3 class="thumbnail-title">Continuous Releases</h3>
                 <p>We try to release new features as fast as possible, and do our best to make upgrades painless.</p>
                 <a class="btn btn-primary btn-large btn-block" href="https://github.com/pinry/pinry/tags/">View Releases</a>
             </div>
         </div>
         <div class="span3">
-            <div class="tile">
-                <img class="tile-image" alt="" src="{{ SITEURL }}/theme/images/illustrations/gift.png">
-                <h3 class="tile-title">Lots of Features</h3>
+            <div class="thumbnail">
+                <h3 class="thumbnail-title">Lots of Features</h3>
                 <p>Check out our tour to see the core list of features but if you want to learn more read the docs.</p>
                 <a class="btn btn-primary btn-large btn-block" href="/tour/">See Tour</a>
             </div>
