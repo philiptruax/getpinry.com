@@ -3,6 +3,13 @@
 Static HTML front for Pinry's hosted service generated with Pelican.
 
 
+## Current Build Status
+
+Yes, even our static HTML pages are using a CI server.
+
+[ ![Codeship Status for pinry/pinry-static](https://www.codeship.io/projects/a0640a70-73e6-0130-e139-22000a9d064e/status?branch=master)](https://www.codeship.io/projects/2091)
+
+
 ## License (GNU AFFERO GENERAL PUBLIC LICENSE)
 
     Pinry, an open source image board.
