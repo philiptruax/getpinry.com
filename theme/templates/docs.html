@@ -4,11 +4,53 @@
 
 {% block yield %}
 <div class="container">
-    <div class="row">
-        <div class="span12">
-            <p>Documentation coming as soon as we stop arguing over the best way
-                to handle it...</p>
-        </div>
+<div class="row">
+    <div class="span12">
+        <h1>Documentation (Work in Progress)</h1>
+
+        <p>This is the open-source core of Pinry, a tiling image board system
+            for people who want to save, tag, and share images, videos and
+            webpages in an easy to skim through format.</p>
+
+        <h2>Requirements</h2>
+
+        <p>Pinry is built on top of Django and optimized to run on a Linux
+            environment.  However we have gotten Pinry to work on Windows and
+            Mac as well but it may require some extra digging around
+            configuration. Pinry's Python requirements are all in the
+            `requirements.txt` file and easily installable once you have up a
+            virtual environment. What you need initially:</p>
+
+        <ul>
+            <li>Python</li>
+            <li>pip</li>
+            <li>virtualenv</li>
+            <li>Your OS's build tools (Ubuntu: `build-essential`, Mac: `Xcode`)</li>
+            <li>Build dependencies for PIL/Pillow (Ubuntu: `apt-get build-dep python-imaging`)</li>
+        </ul>
+
+        <p>After you have all of the above you can skip to Testing and make sure
+            it all works.</p>
+
+
+        <h2>Testing</h2>
+
+        <p>We have many tests built into Pinry to ensure that changes don't
+            break anything. If you are live dangerously and have cutting edge
+            new Pinry features first you can use our master branch for your own
+            instance. We recommend using our tags/versions though.</p>
+
+        <p>To run Pinry's tests inside the Pinry repo run:</p>
+            
+<pre>
+virtualenv .
+bin/pip install -r requirements.txt
+bin/python manage.py test
+</pre>
+
+        <p>Current build status on our CI server: <br/>
+            <a href="https://www.codeship.io/projects/2005"><img src="https://www.codeship.io/projects/461ebc50-70be-0130-073a-22000a9d07d8/status?branch=master"/></a></p>
     </div>
+</div>
 </div>
 {% endblock %}
