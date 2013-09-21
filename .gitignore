@@ -1,10 +1,16 @@
+# python
+*.pyc
+
+# virtualenv
 /bin/
 /include/
 /lib/
 /local/
 
-*.pyc
-
+# pelican
 /pelican.pid
 /srv.pid
 /output/
+
+# misc
+/.idea/

@@ -1,4 +1,7 @@
+# pelican
 pelican
+
+# optional pelican plugins
 Markdown
-ghp-import
 typogrify
+ghp-import

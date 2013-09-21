@@ -1,29 +1,8 @@
-# pinry-static
+# getpinry.com
 
-Static HTML front for Pinry's hosted service generated with Pelican.
+Statically generated website using Pelican for getpinry.com.
 
+## Configuration
 
-## Current Build Status
-
-Yes, even our static HTML pages are using a CI server.
-
-[ ![Codeship Status for pinry/pinry-static](https://www.codeship.io/projects/a0640a70-73e6-0130-e139-22000a9d064e/status?branch=master)](https://www.codeship.io/projects/2091)
-
-
-## License (GNU AFFERO GENERAL PUBLIC LICENSE)
-
-    Pinry, an open source image board.
-    Copyright (C) 2013 Pinry Contributors
-
-    This program is free software: you can redistribute it and/or modify
-    it under the terms of the GNU Affero General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
-    (at your option) any later version.
-
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU Affero General Public License for more details.
-
-    You should have received a copy of the GNU Affero General Public License
-    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+Most settings can be found in `pelicanconf.py`. Past that, since we don't
+do any blogging it's mostly just editing HTML templates.

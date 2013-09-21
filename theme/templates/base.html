@@ -17,21 +17,30 @@
 
         <title>{% block title %}{{ SITENAME }}{% endblock %}</title>
         
-        <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Monoton"/>
-        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Monoton|Open+Sans:700,400,300"/>
+        <link rel="stylesheet" href="{{ SITEURL }}/theme/vendor/bootstrap/3.0.0/css/bootstrap.min.css"/>
         <link rel="stylesheet" href="{{ SITEURL }}/theme/css/base.css"/>
         {% block extra_css %}{% endblock %}
     </head>
 
     <body>
-        <div class="navbar navbar-inverse">
-            <div class="navbar-inner">
-                <div class="container">
-                    <a href="{{ SITEURL }}" class="brand pull-left">{{ SITENAME }}</a>
-                    <ul class="nav pull-right">
-                    {% for name, link in LINKS %}
-                        <li><a href="{{ link }}">{{ name }}</a></li>
-                    {% endfor %}
+        <div class="navbar navbar-default" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="{{ SITEURL }}"><img src="{{ SITEURL }}/theme/images/logo-dark.png" alt="Pinry"></a>
+                </div>
+                <div class="collapse navbar-collapse navbar-ex1-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        {% for name, link in LINKS %}
+                            <li><a href="{{ link }}">{{ name }}</a></li>
+                        {% endfor %}
+                        <li><a href="https://github.com/pinry/pinry" class="btn btn-default navbar-btn">GitHub</a></li>
                     </ul>
                 </div>
             </div>
@@ -42,53 +51,21 @@
         <div class="footer">
             <div class="container">
                 <div class="row">
-                    <div class="span8">
-                        <h3>Want to be a contributor?</h3>
-                        <p>Clone our code on BitBucket, find an issue on our
-                            tracker that you can fix and do a pull request. If
-                            your code matches our general style and it works
-                            we'll merge it. It's that easy!</p>
+                    <div class="col-sm-2">
+                        <img src="{{ SITEURL }}/theme/images/logo-light.png" alt="Pinry">
                     </div>
-                    <div class="span2">
-                        <h3>Links</h3>
-                        <ul class="nav">
+                    <ul class="nav nav-pills pull-right">
                         {% for name, link in LINKS %}
                             <li><a href="{{ link }}">{{ name }}</a></li>
                         {% endfor %}
-                        </ul>
-                    </div>
-                    <div class="span2">
-                        <h3>Social</h3>
-                        <ul class="nav">
-                        {% for name, link in SOCIAL %}
-                            <li><a href="{{ link }}">{{ name }}</a></li>
-                        {% endfor %}
-                        </ul>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="span12">
-                        <p>&copy; 2013 Pinry Contributors | Site compiled with <a href="http://getpelican.com/">Pelican</a></p>
-                    </div>
+                        <li><a href="https://github.com/pinry/pinry">GitHub</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
 
-        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="{{ SITEURL }}/theme/vendor/jquery/2.0.3/jquery-2.0.3.min.js"></script>
+        <script src="{{ SITEURL }}/theme/vendor/bootstrap/3.0.0/js/bootstrap.min.js"></script>
         {% block extra_js %}{% endblock %}
-
-        <script type="text/javascript">
-        
-          var _gaq = _gaq || [];
-          _gaq.push(['_setAccount', 'UA-39005284-1']);
-          _gaq.push(['_trackPageview']);
-        
-          (function() {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-          })();
-        
-        </script>
     </body>
 </html>

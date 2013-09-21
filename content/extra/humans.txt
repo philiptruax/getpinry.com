@@ -3,9 +3,10 @@
 
 
 /* SITE */
-    Standards: HTML5, CSS3, XML
-    Components: Normalize.css, Google Analytics
-    Software: Vim, Pelican
+    Standards: HTML5, CSS3, Markdown
+    Components: jQuery, Bootstrap
+    Software: Pelican, Markdown, Typogrify, ghp-import
+    Authors: Pinry Contributors
 
 
       ___                     ___           ___                 

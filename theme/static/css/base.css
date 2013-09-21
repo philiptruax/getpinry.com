@@ -1,92 +1,62 @@
-/* Start Globals */
-a {
-    color: #2F3A54;
-    text-decoration: none;
+body {
+    font-family: 'Open Sans', sans-serif;
 }
 
-a:hover {
-    color: #74CCB9;
-    text-decoration: none;
-}
-/* End Globals */
-
-
-/* Start Navigation */
-.navbar-inverse .navbar-inner {
-    background: none;
-    filter: none;
-    background-color: #2F3A54;
-    -webkit-border-radius: 0px;
-       -moz-border-radius: 0px;
-            border-radius: 0px;
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans', sans-serif;
 }
 
-.navbar .brand {
-    position: absolute;
+li {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.navbar {
+    background: white;
+    border: none;
+    border-radius: 0;
+}
+
+.navbar-brand img {
     font-family: 'Monoton', sans-serif;
-    font-weight: normal;
-    font-size: 36px;
-    text-decoration: none;
-    margin: 0 0 0 -20px;
-    color: #74CCB9;
+    height: 30px;
 }
 
-.navbar .container {
-    width: 940px;
-    margin: 0 auto;
+.navbar-nav>li>a {
+    text-transform: uppercase;
+    font-size: 0.9em;
+    color: #111 !important;
+    padding: 10px 20px;
 }
 
-.navbar .nav > li > a {
-    color: #74CCB9;
-}
-/* End Navigation */
-
-/* Start Buttons */
-.btn-primary {
-    background: none;
-    filter: none;
-    background-color: #353457;
-    border: none;
-    -webkit-box-shadow: none;
-       -moz-box-shadow: none;
-            box-shadow: none;
-    text-shadow: none;
+.navbar-nav>li>a.btn {
+    padding: 5px 10px;
+    margin: 5px 17px;
 }
 
-.btn-primary:hover {
-    background-color: #504F75;
+@media (min-width: 768px) {
+    .navbar-nav>li>a {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .navbar-nav>li>a.btn {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
 }
 
-.btn-success {
-    background: none;
-    filter: none;
-    background-color: #42D654;
-    border: none;
-    -webkit-box-shadow: none;
-       -moz-box-shadow: none;
-            box-shadow: none;
-    text-shadow: none;
-}
-
-.btn-success:hover {
-    background-color: #69DB77;
-}
-/* End Buttons */
-
-
-/* Start Footer */
 .footer {
-    background: #eceff1;
-    color: #bdc1c5;
-    padding: 30px 0;
-    margin-top: 20px;
+    background-color: #111;
+    padding: 70px 0 80px 0;
 }
 
-.footer a {
-    color: #bdc1c5;
+.footer img {
+    height: 30px;
 }
 
-.footer a:hover {
-    color: #999;
+.footer .nav a {
+    color: #666;
+    text-align: right;
+    text-transform: uppercase;
+    font-size: 0.9em;
 }
-/* End Footer */

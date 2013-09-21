@@ -1,33 +1,20 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*- #
-
 AUTHOR = u'Pinry Contributors'
 SITENAME = u'Pinry'
 SITEURL = 'http://getpinry.com'
 
+
 TIMEZONE = 'America/New_York'
 DEFAULT_LANG = u'en'
-
-DEFAULT_PAGINATION = 5
-DEFAULT_DATE_FORMAT = '%d %b %Y'
-
 THEME = 'theme'
 TYPOGRIFY = True
-
 JINJA_EXTENSIONS = (
     'jinja2.ext.loopcontrols',
 )
 
-ARTICLE_URL = 'blog/{date:%Y}/{date:%m}/{date:%d}/{slug}/'
-ARTICLE_SAVE_AS = 'blog/{date:%Y}/{date:%m}/{date:%d}/{slug}/index.html'
 
 TEMPLATE_PAGES = {
-    'tour.html': 'tour/index.html',
-    'docs.html': 'docs/index.html',
-    'blog.html': 'blog/index.html',
-    'contact.html': 'contact/index.html',
+    'about.html': 'about/index.html',
 }
-
 FILES_TO_COPY = (
     ('extra/CNAME', 'CNAME'),
     ('extra/apple-touch-icon-114x114-precomposed.png', 'apple-touch-icon-114x114-precomposed.png'),
@@ -40,17 +27,10 @@ FILES_TO_COPY = (
     ('extra/robots.txt', 'robots.txt'),
 )
 
+
 LINKS = (
-    ('Code', 'https://github.com/pinry/pinry/'),
-    ('Tour', '/tour/'),
-    ('Docs', '/docs/'),
-    ('Blog', '/blog/'),
-    ('Contact', '/contact/'),
+    ('About', '/about/'),
+    ('Code', 'https://github.com/pinry/pinry'),
+    ('Issues', 'https://github.com/pinry/pinry/issues'),
+    ('Deployment', 'https://github.com/pinry/docker-pinry'),
 )
-
-SOCIAL = (
-    ('Feed', '/feeds/all.atom.xml'),
-    ('Twitter', 'https://twitter.com/getpinry'),
-)
-
-ISSUETRACKER = 'https://github.com/pinry/pinry/issues'
