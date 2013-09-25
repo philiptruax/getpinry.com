@@ -4,7 +4,7 @@
     <style>
         #header-background iframe {
             width: 100%;
-            margin-top: -70px;
+            margin-top: -80px;
             height: 500px;
             overflow: hidden;
             position: relative;
@@ -61,11 +61,16 @@
         $(window).load(function() {
             $('#show-board').click(function() {
                 $('#header-overlay').hide();
+                $('#header-background iframe').animate({
+                    height: $(window).height(),
+                });
             });
 
             function resizeBoard() {
                 if ($(window).height() > 880) {
-                    var maxHeight = $(window).height() - 400;
+                    var otherElementsHeight = 374;
+                    console.log(otherElementsHeight);
+                    var maxHeight = $(window).height() - otherElementsHeight;
                     $('#header-background iframe').height(maxHeight);
                     $('#header-overlay').height(maxHeight);
                     $('#header-overlay').css('margin-top', -maxHeight);
