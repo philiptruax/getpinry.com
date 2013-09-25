@@ -19,17 +19,18 @@
             z-index: 1;
         }
 
-        #header-content {
-            position: absolute;
+        #header-overlay .row {
             margin-top: 60px;
-            left: 50%;
-            width: 800px;
-            margin-left: -400px;
+            text-align: center;
+        }
+
+        #header #title {
             text-align: center;
         }
 
         #header #title img {
-            height: 150px;
+            max-height: 150px;
+            max-width: 100%;
             margin-bottom: 30px;
         }
 
@@ -68,14 +69,14 @@
 
             function resizeBoard() {
                 if ($(window).height() > 880) {
-                    var otherElementsHeight = 374;
+                    var otherElementsHeight = 370;
                     console.log(otherElementsHeight);
                     var maxHeight = $(window).height() - otherElementsHeight;
                     $('#header-background iframe').height(maxHeight);
                     $('#header-overlay').height(maxHeight);
                     $('#header-overlay').css('margin-top', -maxHeight);
-                    var contentMarginTop = (maxHeight - $('#header-content').height()) / 2;
-                    $('#header-content').css('margin-top', contentMarginTop);
+                    var contentMarginTop = (maxHeight - $('#header-overlay .row').height()) / 2;
+                    $('#header-overlay .row').css('margin-top', contentMarginTop);
                 }
             }
             resizeBoard();
@@ -92,19 +93,21 @@
         <iframe src="http://demo.getpinry.com" seamless></iframe>
     </div>
     <div id="header-overlay">
-        <div id="header-content">
-            <h1 id="title"><img src="{{ SITEURL }}/theme/images/logo-dark.png" alt="Pinry"></h1>
-            <h2 id="description">A tiling image board system for people who want to save, tag, and share images, videos and webpages.</h2>
-            <p>
-                <a href="#" class="btn btn-lg btn-primary" id="show-board">Show Demo Board</a>
-            </p>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <h1 id="title"><img src="{{ SITEURL }}/theme/images/logo-dark.png" alt="Pinry"></h1>
+                    <h2 id="description">A tiling image board system for people who want to save, tag, and share images, videos and webpages.</h2>
+                    <a href="#" class="btn btn-lg btn-primary" id="show-board">Show Demo Board</a>
+                </div>
+            </div>
         </div>
     </div>
 </div>
 <div class="as-seen-on">
     <div class="container">
         <div class="row">
-            <div class="col-sm-12">
+            <div class="col-md-12">
                 <h6>As Seen On</h6>
                 <p>
                     <a href="http://thenextweb.com/apps/2012/04/27/pinry-is-a-self-hosted-version-of-pinterest-that-gives-you-full-control-of-your-pins/" target="_blank"><img src="{{ SITEURL }}/theme/images/as-seen-on/tnw.png"/></a>

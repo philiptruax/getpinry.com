@@ -41,7 +41,7 @@ EXTRA_PATH_METADATA = {
 
 LINKS = (
     ('About', '/about/'),
+    ('Docs', 'http://pinry.readthedocs.org/'),
     ('Code', 'https://github.com/pinry/pinry'),
     ('Issues', 'https://github.com/pinry/pinry/issues'),
-    ('Deployment', 'https://github.com/pinry/docker-pinry'),
 )
