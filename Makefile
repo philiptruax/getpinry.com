@@ -19,12 +19,16 @@ help:
 	@echo '                                                                    '
 
 
+html: clean $(OUTPUTDIR)/index.html
+	@echo 'Done'
+
+
+$(OUTPUTDIR)/%.html:
+	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
+
+
 clean:
 	find $(OUTPUTDIR) -mindepth 1 -not \( -name .gitkeep \) -delete
-
-
-html: clean
-	@echo 'Done'
 
 
 start:
