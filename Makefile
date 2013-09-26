@@ -19,12 +19,12 @@ help:
 	@echo '                                                                    '
 
 
-html: clean $(OUTPUTDIR)/index.html
-	@echo 'Done'
-
-
 clean:
 	find $(OUTPUTDIR) -mindepth 1 -not \( -name .gitkeep \) -delete
+
+
+html: clean
+	@echo 'Done'
 
 
 start:
@@ -35,7 +35,7 @@ stop:
 	$(BASEDIR)/server.sh stop
 
 
-github:
+github: html
 	bin/ghp-import -m "Update website from master branch for GitHub Pages" $(OUTPUTDIR)
 	git push origin gh-pages
 
