@@ -1,7 +1,5 @@
 # pelican
 pelican
 
-# optional pelican plugins
-Markdown
-typogrify
+# pelican github support
 ghp-import

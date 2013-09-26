@@ -2,7 +2,7 @@
 ##
 # This section should match your Makefile
 ##
-PELICAN=pelican
+PELICAN=bin/pelican
 PELICANOPTS=
 
 BASEDIR=$(pwd)
