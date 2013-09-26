@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta http-equiv="cleartype" content="on">
+
+        <!--  ___                     ___           ___                 
+             /  /\      ___          /__/\         /  /\          ___   
+            /  /::\    /  /\         \  \:\       /  /::\        /__/|  
+           /  /:/\:\  /  /:/          \  \:\     /  /:/\:\      |  |:|  
+          /  /:/~/:/ /__/::\      _____\__\:\   /  /:/~/:/      |  |:|  
+         /__/:/ /:/  \__\/\:\__  /__/::::::::\ /__/:/ /:/___  __|__|:|  
+         \  \:\/:/      \  \:\/\ \  \:\~~\~~\/ \  \:\/:::::/ /__/::::\  
+          \  \::/        \__\::/  \  \:\  ~~~   \  \::/~~~~     ~\~~\:\ 
+           \  \:\        /__/:/    \  \:\        \  \:\           \  \:\
+            \  \:\       \__\/      \  \:\        \  \:\           \__\/
+             \__\/                   \__\/         \__\/             -->
+
+
+        <title>Contact Us</title>
+        <meta name="description" content="A tiling image board system for people who want to save, tag, and share images, videos and webpages."/>
+
+        <meta name="HandheldFriendly" content="True"/>
+        <meta name="MobileOptimized" content="480"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
+        
+        <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Monoton|Open+Sans:700,400,300"/>
+        <link rel="stylesheet" href="../theme/vendor/bootstrap/3.0.0/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="../theme/css/base.css"/>
+    <style>
+        body {
+            background-color: #F5F5EB;
+        }
+
+        .content h1 {
+            font-size: 3em;
+            font-weight: bold;
+            margin-bottom: 25px;
+        }
+
+        .content h2 {
+            font-size: 2.5em;
+            font-weight: 300;
+            margin-bottom: 25px;
+        }
+
+        .content hr {
+            border: none;
+            border-top: #edece4 1px solid;
+            margin: 40px 0;
+        }
+
+        .content p {
+            font-size: 1.2em;
+            line-height: 1.5em;
+        }
+
+        .content li {
+            font-size: 1.2em;
+            line-height: 1.5em;
+        }
+
+        .col-md-9 {
+            background: white;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+        }
+
+        .footer {
+            margin-top: 40px;
+        }
+
+        .sidebar {
+            position: static;
+        }
+
+        @media (min-width: 992px) {
+            .sidebar {
+                position: fixed;
+                width: 210px;
+            }
+
+            .col-md-9 {
+                padding: 30px 50px;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .sidebar {
+                width: 260px;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .col-md-9 {
+                margin-left: 15px;
+                margin-right: 15px;
+            }
+
+            .col-md-9 img {
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+    </head>
+
+    <body>
+        <a name="top"></a>
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".header-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href=".."><img src="../theme/images/logo-dark.png" alt="Pinry"></a>
+                </div>
+                <div class="collapse navbar-collapse header-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                            <li><a href="/about/">About</a></li>
+                            <li><a href="https://pinry.readthedocs.org/">Docs</a></li>
+                            <li><a href="https://github.com/pinry/pinry/issues">Issues</a></li>
+                        <li><a href="https://github.com/pinry/pinry" class="btn btn-default navbar-btn">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+<div class="container content">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="list-group sidebar" data-spy="affix">
+                <a href="#contacting-the-developers" class="list-group-item">Contacting The Developers</a>
+                <a href="#deploying-pinry" class="list-group-item">Deploying Pinry</a>
+                <a href="#pinry-logos" class="list-group-item">Pinry Logos</a>
+                <a href="#want-to-be-a-contributor" class="list-group-item">Want to be a contributor?</a>
+                <a href="#license-simplified-bsd" class="list-group-item">License (Simplified BSD)</a>
+            </div>
+        </div>
+        <div class="col-md-9">
+            <h1>The Open Source Pin Board</h1>
+            <p>Pinry was the first and remains the best open source pin board alternative
+                to sites like Wookmark and Pinterest. These sites are great for sharing
+                and interacting with other people but if something goes wrong or the
+                service shuts down you lose everything. Pinry allows you to host your
+                own board knowing that it will always be there.</p>
+            <hr>
+            <h2><a name="contacting-the-developers"></a>Contacting The Developers</h2>
+            <p>The best way to get help with Pinry is using our GitHub issue tracker.
+                Alternatively you can email us but we aren't as quick to respond to
+                those.</p>
+            <ul>
+                <li><strong>Pinry issue tracker:</strong> <a href="https://github.com/pinry/pinry/issues">Issue Tracker</a></li>
+                <li><strong>Pinry email address:</strong> devs [at] getpinry [dot] com</li>
+            </ul>
+            <hr>
+            <h2><a name="deploying-pinry"></a>Deploying Pinry</h2>
+            <p>Our supported and suggested way to deploy Pinry is using Docker. We provide
+                support and instructions for that over at the docker-pinry GitHub
+                repository. If you'd like a different setup then check out the hundreds of
+                tutorials for production Django deployment found via Google.</p>
+            <ul>
+                <li><strong>docker-pinry code:</strong> <a href="https://github.com/pinry/docker-pinry">GitHub</a></li>
+                <li><strong>docker-pinry issue tracker:</strong> <a href="https://github.com/pinry/docker-pinry/issues">Issues</a></li>
+            </ul>
+            <hr>
+            <h2><a name="pinry-logos"></a>Pinry Logos</h2>
+            <p>We have one logo in a light and dark variant:</p>
+            <div class="row">
+                <div class="col-sm-6">
+                    <img class="col-sm-12 img-responsive" src="../theme/images/logo-dark.png" alt="Pinry Dark Logo">
+                </div>
+                <div class="col-sm-6">
+                    <img class="col-sm-12 img-responsive" src="../theme/images/logo-light.png" alt="Pinry Light Logo">
+                </div>
+            </div>
+            <hr>
+            <h2><a name="want-to-be-a-contributor"></a>Want to be a contributor?</h2>
+            <p>The best way is to clone our GitHub repo, build out a feature
+                or fix some bugs in a clean style that matches our own and if we
+                like it we'll merge it! If you continuously provide Pinry with
+                good updates we'll contact you or you can contact us with your
+                track record and we can discuss getting you commit privileges.</p>
+            <hr>
+            <h2><a name="license-simplified-bsd"></a>License (Simplified BSD)</h2>
+            <p>Copyright (c) Pinry Contributors
+                All rights reserved.</p>
+
+            <p>Redistribution and use in source and binary forms, with or without
+                modification, are permitted provided that the following conditions are met:</p>
+
+            <ol>
+                <li>Redistributions of source code must retain the above copyright notice,
+                    this list of conditions and the following disclaimer.</li>
+                <li>Redistributions in binary form must reproduce the above copyright notice,
+                    this list of conditions and the following disclaimer in the documentation
+                    and/or other materials provided with the distribution.</li>
+            </ol>
+            <p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+                ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+                WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+                DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR
+                ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+                (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+                LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+                ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+                (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+                SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</p>
+        </div>
+    </div>
+</div>
+
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-2">
+                        <img src="../theme/images/logo-light.png" alt="Pinry">
+                    </div>
+                    <div class="col-xs-10">
+                        <a href="#top" class="btn btn-inverse pull-right">Back To Top</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="../theme/vendor/jquery/2.0.3/jquery-2.0.3.min.js"></script>
+        <script src="../theme/vendor/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    </body>
+</html>
