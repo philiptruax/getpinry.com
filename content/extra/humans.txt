@@ -3,9 +3,9 @@
 
 
 /* SITE */
-    Standards: HTML5, CSS3, Markdown
+    Standards: HTML5, CSS3, reStructuredText
     Components: jQuery, Bootstrap
-    Software: Pelican, Markdown, Typogrify, ghp-import
+    Software: Pelican, ghp-import
     Authors: Pinry Contributors
 
 
@@ -20,3 +20,4 @@
    \  \:\        /__/:/    \  \:\        \  \:\           \  \:\
     \  \:\       \__\/      \  \:\        \  \:\           \__\/
      \__\/                   \__\/         \__\/                
+

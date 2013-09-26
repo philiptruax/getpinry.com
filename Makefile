@@ -4,7 +4,7 @@ PELICANOPTS=
 BASEDIR=$(CURDIR)
 INPUTDIR=$(BASEDIR)/content
 OUTPUTDIR=$(BASEDIR)/output
-CONFFILE=$(BASEDIR)/pelicanconf.py
+CONFFILE=$(BASEDIR)/config.py
 
 
 help:
@@ -13,8 +13,8 @@ help:
 	@echo 'Usage:                                                              '
 	@echo '   make html                        (re)generate the web site       '
 	@echo '   make clean                       remove the generated files      '
-	@echo '   make start                   	   start/restart develop_server.sh '
-	@echo '   make stop                   	   stop develop_server.sh          '
+	@echo '   make start                   	   start/restart server.sh         '
+	@echo '   make stop                   	   stop server.sh                  '
 	@echo '   github                           upload the web site via gh-pages'
 	@echo '                                                                    '
 
@@ -28,11 +28,11 @@ clean:
 
 
 start:
-	$(BASEDIR)/develop_server.sh restart
+	$(BASEDIR)/server.sh restart
 
 
 stop:
-	$(BASEDIR)/develop_server.sh stop
+	$(BASEDIR)/server.sh stop
 
 
 github:
