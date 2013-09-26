@@ -36,7 +36,7 @@ stop:
 
 
 github:
-	ghp-import -m "Update website from master branch for GitHub Pages" $(OUTPUTDIR)
+	bin/ghp-import -m "Update website from master branch for GitHub Pages" $(OUTPUTDIR)
 	git push origin gh-pages
 
 
