@@ -31,25 +31,29 @@
         <link rel="stylesheet" href="./theme/vendor/bootstrap/3.0.0/css/bootstrap.min.css"/>
         <link rel="stylesheet" href="./theme/css/base.css"/>
     <style>
-        #header-background iframe {
+        #header-background {
             width: 100%;
             margin-top: -80px;
-            height: 500px;
-            overflow: hidden;
+            min-height: 500px;
+            height: 100vh;
             position: relative;
             z-index: 0;
+            background: url("./theme/images/index/screenshot.png");
+            background-position: center;
         }
 
         #header-overlay {
             background: rgba(255, 255, 255, 0.8);
-            height: 500px;
-            margin-top: -500px;
+            min-height: 500px;
+            margin-top: -100vh;
             position: relative;
             z-index: 1;
+            min-height: 500px;
+            height: 100vh;
         }
 
         #header-overlay .row {
-            margin-top: 60px;
+            margin-top: 20vh;
             text-align: center;
         }
 
@@ -110,16 +114,14 @@
         </div>
         
 <div id="header">
-    <div id="header-background">
-        <iframe src="http://demo.getpinry.com" seamless></iframe>
-    </div>
+    <div id="header-background"></div>
     <div id="header-overlay">
         <div class="container">
             <div class="row">
                 <div class="col-md-10 col-md-offset-1">
                     <h1 id="title"><img src="./theme/images/logo-dark.png" alt="Pinry"></h1>
                     <h2 id="description">The tiling image board system for people who want to save, tag, and share images, videos, and webpages.</h2>
-                    <a href="#" class="btn btn-lg btn-primary" id="show-board">Show Demo Board</a>
+                    <a href="https://github.com/pinry/pinry" class="btn btn-lg btn-primary" id="get-the-code">Get The Code</a>
                 </div>
             </div>
         </div>
@@ -155,32 +157,5 @@
 
         <script src="./theme/vendor/jquery/2.0.3/jquery-2.0.3.min.js"></script>
         <script src="./theme/vendor/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-    <script>
-        $(window).load(function() {
-            $('#show-board').click(function() {
-                $('#header-overlay').hide();
-                $('#header-background iframe').animate({
-                    height: $(window).height(),
-                });
-            });
-
-            function resizeBoard() {
-                if ($(window).height() > 880) {
-                    var otherElementsHeight = 366;
-                    console.log(otherElementsHeight);
-                    var maxHeight = $(window).height() - otherElementsHeight;
-                    $('#header-background iframe').height(maxHeight);
-                    $('#header-overlay').height(maxHeight);
-                    $('#header-overlay').css('margin-top', -maxHeight);
-                    var contentMarginTop = (maxHeight - $('#header-overlay .row').height()) / 2;
-                    $('#header-overlay .row').css('margin-top', contentMarginTop);
-                }
-            }
-            resizeBoard();
-            $(window).resize(function() {
-                resizeBoard();
-            });
-        });
-    </script>
     </body>
 </html>
