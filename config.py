@@ -42,7 +42,7 @@ STATIC_PATHS = (
 
 LINKS = (
     ('About', '/about/'),
-    ('Docs', 'https://pinry.readthedocs.org/'),
+    ('Docs', 'https://github.com/pinry/pinry/'),
     ('Issues', 'https://github.com/pinry/pinry/issues'),
 )
 
